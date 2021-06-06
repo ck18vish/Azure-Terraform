@@ -1,3 +1,9 @@
+# Create a resource group
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
+  location = "West Europe"
+}
+
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "example" {
   name                = "example-network"
